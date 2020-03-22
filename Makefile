@@ -1,4 +1,3 @@
 build:
-	cd functions/hello-world
-	go get ./...
-	go build
+	cd functions/hello-world;go get ./...
+	cd functions/hello-world;go build -o hello-world
