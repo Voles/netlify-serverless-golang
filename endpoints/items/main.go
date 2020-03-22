@@ -8,7 +8,7 @@ import (
 )
 
 type item struct {
-	Title string
+	Title string `json:"title"`
 }
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
