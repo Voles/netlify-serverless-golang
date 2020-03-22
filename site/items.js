@@ -1,4 +1,4 @@
-const apiBaseUrl = '/.netlify'
+const apiBaseUrl = '/.netlify/functions'
 
 fetch(`${apiBaseUrl}/items`)
   .then(result => result.json())
