@@ -11,14 +11,18 @@ type item struct {
 	Title string `json:"title"`
 }
 
-func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	var responseBody string
-
-	items := []item{
+func getItems() []item {
+	return []item{
 		{Title: "First Item"},
 		{Title: "Second Item"},
 		{Title: "Third Item"},
 	}
+}
+
+func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	var responseBody string
+
+	items := getItems()
 
 	jsonBody, err := json.Marshal(items)
 	if err != nil {
