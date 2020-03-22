@@ -4,4 +4,6 @@ go:
   - 1.3
 
 script:
-  - cd endpoints/items/; go test
+  - cd endpoints/items/
+  - go get ./...
+  - go test
