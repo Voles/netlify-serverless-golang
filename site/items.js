@@ -7,6 +7,6 @@ fetch(`${apiBaseUrl}/items`)
       var template = document.querySelector('#item');
       template.content.querySelector('.title').textContent = report.title;
       var clone = document.importNode(template.content, true);
-      document.body.appendChild(clone);
+      document.querySelector('ul').appendChild(clone);
     })
   })
