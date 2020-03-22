@@ -1,0 +1,2 @@
+# netlify-serverless-golang
+🧪
