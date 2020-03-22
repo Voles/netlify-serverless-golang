@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.3
+
+script:
+  - cd endpoints/items
+  - go test
+
+matrix:
+  allow_failures:
+    - go: master
